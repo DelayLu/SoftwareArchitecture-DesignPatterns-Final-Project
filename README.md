@@ -2,7 +2,7 @@
 
 This is the final team project created in 2015 Apr,for Software Architecture and Design Pattern course, CS4015 at University of New Brunswick.
 
-See "Project Requirements.docx" for detailed requirements of the project.
+See "Project Requirements.pdf" for detailed requirements of the project.
 
 The project includes Composite pattern, Builder pattern, Singleton pattern, Flyweight pattern, Decorator pattern, Bridge pattern, Adapter pattern, Abstract Factory pattern, Iterator pattern, and Command and Memento pattern.
 I have added comments in where each pattern is used.
