@@ -52,7 +52,21 @@ public class MainUI {
 	ListComponentIterator newIterator;
 	ListComponent list;
 	ListComponent newList;
+	JComboBox<String> tags;
 	
+	JTextField openIndexText;
+	JTextField closeIndexText;
+	JTextField openRowText;
+	JTextField closeRowText;
+	JTextField deleteRowText;
+	JTextField deleteIndexText;
+	
+	JLabel openLabel;
+	JLabel closeLabel;
+	JLabel openRowLabel;
+	JLabel closeRowLabel;
+	JLabel deleteRowLabel;
+	JLabel deleteIndexLabel;
 
 	public void doWork() throws FileNotFoundException {
 		
@@ -64,19 +78,19 @@ public class MainUI {
 		textArea = new JTextArea();
 		textArea.setEditable(false);
 		
-		JTextField openIndexText = new JTextField(2);
-		JTextField closeIndexText = new JTextField(2);
-		JTextField openRowText = new JTextField(2);
-		JTextField closeRowText = new JTextField(2);
-		JTextField deleteRowText = new JTextField(2);
-		JTextField deleteIndexText = new JTextField(2);
+		openIndexText = new JTextField(2);
+		closeIndexText = new JTextField(2);
+		openRowText = new JTextField(2);
+		closeRowText = new JTextField(2);
+		deleteRowText = new JTextField(2);
+		deleteIndexText = new JTextField(2);
 		
-		JLabel openLabel = new JLabel("openTagIndex:");
-		JLabel closeLabel = new JLabel("closeTagIndex:");
-		JLabel openRowLabel = new JLabel("open row:");
-		JLabel closeRowLabel = new JLabel("close row:");
-		JLabel deleteRowLabel = new JLabel("delete row:");
-		JLabel deleteIndexLabel = new JLabel("delete index:");
+		openLabel = new JLabel("openTagIndex:");
+		closeLabel = new JLabel("closeTagIndex:");
+		openRowLabel = new JLabel("open row:");
+		closeRowLabel = new JLabel("close row:");
+		deleteRowLabel = new JLabel("delete row:");
+		deleteIndexLabel = new JLabel("delete index:");
 		infoLabel = new JLabel("This is information label");
 		
 		
@@ -111,7 +125,7 @@ public class MainUI {
 
 		final JPanel comboPanel = new JPanel();
 		JLabel comboLbl = new JLabel("Tags:");
-		JComboBox<String> tags = new JComboBox<String>(tagOptions);
+		tags = new JComboBox<String>(tagOptions);
 
 		comboPanel.add(comboLbl);
 		comboPanel.add(tags);
